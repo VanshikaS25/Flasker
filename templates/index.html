@@ -1,0 +1,12 @@
+<h1> HA HA HA </h1>
+<p> My name is {{name}} </p>
+
+{% for topping in fav_pizza %}
+	{%if topping == 41 %}
+		{{topping| string + "ff"}} <br/>
+	{% else %}
+		{{topping}} <br/>
+	{% endif %}
+{% endfor %}
+
+{{fav_pizza.0}}
