@@ -1,4 +1,7 @@
-<h1> HA HA HA </h1>
+{% extends "base.html" %}
+
+{% block content %}
+<h1> Dear user </h1>
 <p> My name is {{name}} </p>
 
 {% for topping in fav_pizza %}
@@ -10,3 +13,13 @@
 {% endfor %}
 
 {{fav_pizza.0}}
+
+<br/> <br/>
+
+
+<a class="icon-link icon-link-hover" href='/name'>
+  Name
+  <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+</a>
+
+{% endblock %}

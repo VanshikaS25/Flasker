@@ -1,4 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
 <br/>
 <center>
 	<h1> 404 Error </h1>
+	<img src="{{ url_for('static', filename='images/404.jpg')}}" alt="Girl in a jacket" style="width:500px;height:350px;">
 </center>
+
+{%endblock %}
